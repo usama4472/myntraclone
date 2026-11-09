@@ -1,0 +1,171 @@
+style.css 
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    font-family:Figtree-Regular,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+
+}
+.header
+{
+    width: 100% ;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 2px 10px 0px #ccc;
+}
+.headerleft
+{
+    width:48%;
+    margin-left: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    }
+    .menu>ul
+    {
+        display: flex;
+        gap: 30px;
+    }
+    .menu>ul>li a{
+        font-size: 14px;
+        font-weight: bold;
+        color: black;
+    }
+    .headerright
+    {
+      width: 45%;
+      display: flex;
+      margin-left: 2%;
+     align-items:center;
+     justify-content: space-between;
+    }
+    .headerright  form{
+        width: 70%;
+        display: flex;
+        border: 1px solid #ccc;
+        border-radius: 5px; 
+    }
+     .headerright form button{
+        width: 10%;
+        display: flex;
+        background: transparent;
+        border: none;
+        align-items: center;
+     }
+     .headerright form input{
+        width: 90%;
+        height: 30px;
+        border: none;
+     }
+     .profile ul{ 
+        display: flex;
+        gap: 15px;
+     }
+     .profile ul li{
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+         font-size:14px;
+         gap: 3px;     
+    }
+    .banner{
+        width: 100%;
+        margin-top: 50px;
+        
+    }
+    .banner img{
+        width: 100%;
+        height: 300px;
+   }
+   .brandsection{
+    width: 100%;
+    padding: 80px 0px;
+   }
+   .brandsection h2{
+    padding-left: 30 px;
+    font-size: 30px;
+   }.brandrow{
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    }
+    .branditems{
+        width: 17%;
+        box-shadow: 0px 0px 10px 2px#ccc;
+    }
+    .branditems img{
+        width: 100%;
+    }
+    /* Mobile ke liye fix */
+@media (max-width: 600px) {
+  .header {
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  /* Mobile par bara menu chupa do */
+  .nav, .navbar, .menu {
+    display: none;
+  }
+
+  /* Sirf Logo aur Bag dikhega */
+  .logo {
+    font-size: 20px;
+  }
+
+  /* SALE wali image poori screen par aa jaye */
+  .banner img, .sale img, .hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    flex-wrap: wrap !important;
+    padding: 10px 12px !important;
+    gap: 10px !important;
+  }
+  .headerleft {
+    width: auto !important;
+    flex: 1 !important;
+    margin-left: 0 !important;
+    justify-content: flex-start !important;
+  }
+  .menu {
+    display: none !important;
+  }
+  .headerright {
+    width: 100% !important;
+    order: 3 !important;
+    margin-left: 0 !important;
+    gap: 10px !important;
+  }
+  .headerright form {
+    flex: 1 !important;
+    width: auto !important;
+  }
+  .profile ul {
+    gap: 10px !important;
+  }
+  .profile ul li {
+    font-size: 11px !important;
+  }
+  .banner {
+    margin-top: 15px !important;
+  }
+  .banner img {
+    height: auto !important;
+  }
+  .brandrow {
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+    justify-content: center !important;
+  }
+  .branditems {
+    width: 46% !important;
+  }
+}
